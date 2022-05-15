@@ -44,9 +44,13 @@ void TuningMenu::buttonClicked(Button* b)
         {
             prepareMenu();
             auto menuArea = Rectangle<int>(getScreenX(), getScreenY() - getParentHeight(), getParentWidth(), getParentHeight());
-            int selection = menu.showMenu(PopupMenu::Options().withTargetScreenArea(menuArea));
-
-            runMenuSelection(selection);
+            //int selection = menu.showMenu(PopupMenu::Options().withTargetScreenArea(menuArea));
+            menu.showMenuAsync(juce::PopupMenu::Options().withTargetScreenArea(menuArea),
+                [this](int selection)
+                {
+                    runMenuSelection(selection);
+                });
+           
         }
         repaint();
     }
