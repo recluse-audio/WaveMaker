@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="KGpNm7" name="WaveMaker" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="UjRGUF" name="WaveMaker">
+    <GROUP id="{213FE1B3-B216-5DA6-EA53-6E3F56443FB2}" name="Source">
+      <GROUP id="{0E815E68-BDDA-CBCB-360F-4E27771A8F7B}" name="LookNFeel">
+        <FILE id="Ba0Ps8" name="WaveFeel.cpp" compile="1" resource="0" file="Source/WaveFeel.cpp"/>
+        <FILE id="tlt1io" name="WaveFeel.h" compile="0" resource="0" file="Source/WaveFeel.h"/>
+      </GROUP>
+      <GROUP id="{5BBA36FA-E0A9-4C3B-C349-0C7116A608A6}" name="Wave">
+        <FILE id="bvrIyW" name="WaveFactory.h" compile="0" resource="0" file="Source/WaveFactory.h"/>
+        <FILE id="ttfLQW" name="WaveTable.h" compile="0" resource="0" file="Source/WaveTable.h"/>
+      </GROUP>
+      <GROUP id="{A5F0B927-A8F2-9E60-FA8A-24EC8CA0B152}" name="Menu">
+        <FILE id="l6bquT" name="TuningsMenu.cpp" compile="1" resource="0" file="Source/TuningsMenu.cpp"/>
+        <FILE id="QV10Zg" name="TuningsMenu.h" compile="0" resource="0" file="Source/TuningsMenu.h"/>
+        <FILE id="golK2a" name="TuningTool.h" compile="0" resource="0" file="Source/TuningTool.h"/>
+      </GROUP>
+      <GROUP id="{720E6CC4-4362-9BDA-F50D-D5EDE07DE979}" name="Base">
+        <FILE id="g9IRV2" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/PluginProcessor.cpp"/>
+        <FILE id="jCa1Oz" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/PluginProcessor.h"/>
+        <FILE id="rP4boy" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="NQGOtf" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{E74A7601-BC1C-A53C-4F04-B399E53B85CD}" name="Components">
+        <FILE id="l2wSTV" name="WaveSizeControl.h" compile="0" resource="0"
+              file="Source/WaveSizeControl.h"/>
+        <FILE id="W6TIRt" name="HarmonicComponent.h" compile="0" resource="0"
+              file="Source/HarmonicComponent.h"/>
+        <FILE id="NV6Kb9" name="WaveVisual.h" compile="0" resource="0" file="Source/WaveVisual.h"/>
+      </GROUP>
+    </GROUP>
+    <FILE id="P9ZqZq" name="AudioBufferWriter.h" compile="0" resource="0"
+          file="Source/AudioBufferWriter.h"/>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="WaveMaker"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="WaveMaker"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
